@@ -69,8 +69,27 @@ const setupVisit = () => {
   });
 };
 
+const setupHeader = () => {
+  const top = document.querySelector(".top");
+  const toggle = document.querySelector(".nav-toggle");
+  const float = document.querySelector(".call-float");
+  const hero = document.querySelector(".hero");
+  if (!top) return;
+  const sync = () => {
+    const menuOpen = toggle?.getAttribute("aria-expanded") === "true";
+    top.classList.toggle("is-solid", menuOpen || window.scrollY > 20);
+    if (float && hero) {
+      float.classList.toggle("is-visible", hero.getBoundingClientRect().bottom < 72);
+    }
+  };
+  sync();
+  window.addEventListener("scroll", sync, { passive: true });
+  toggle?.addEventListener("click", () => requestAnimationFrame(sync));
+};
+
 setupMenu();
 setupVisit();
+setupHeader();
 document.querySelectorAll("[data-year]").forEach((node) => {
   node.textContent = String(new Date().getFullYear());
 });

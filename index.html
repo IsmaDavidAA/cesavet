@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CESAVET | Veterinaria y emergencias en Cochabamba</title>
-  <meta name="description" content="CESAVET, centro de salud veterinaria en Cochabamba. Consultas, vacunas, tratamientos, internación y ecografía. Emergencias 24 horas. Calle 16 de Julio, entre Calama y Ladislao Cabrera. Teléfono 4461138.">
-  <meta name="theme-color" content="#0c3b34">
+  <meta name="description" content="CESAVET, centro de salud veterinaria en Cochabamba. Consultas, vacunas, tratamientos, internación y ecografía. Emergencias 24 horas. Ladislao Cabrera N° 786. Teléfono 4461138.">
+  <meta name="theme-color" content="#071614">
   <link rel="canonical" href="https://ismadavidaa.github.io/cesavet/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="CESAVET | Veterinaria y emergencias en Cochabamba">
@@ -13,9 +13,10 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_BO">
   <meta property="og:url" content="https://ismadavidaa.github.io/cesavet/">
+  <meta property="og:image" content="https://ismadavidaa.github.io/cesavet/assets/fachada.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -25,10 +26,10 @@
     "description": "Centro de salud veterinaria en Cochabamba. Consultas, vacunas, tratamientos, internación, ecografía y emergencias las 24 horas.",
     "url": "https://ismadavidaa.github.io/cesavet/",
     "telephone": ["+59144661138", "+59170769984"],
-    "image": "https://ismadavidaa.github.io/cesavet/favicon.svg",
+    "image": "https://ismadavidaa.github.io/cesavet/assets/fachada.jpg",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Calle 16 de Julio N° 565, entre Calama y Ladislao Cabrera",
+      "streetAddress": "Ladislao Cabrera N° 786",
       "addressLocality": "Cochabamba",
       "addressCountry": "BO"
     },
@@ -55,46 +56,44 @@
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <div class="alert-bar">
-    <div class="wrap alert-bar-inner">
-      <span>Emergencias veterinarias las 24 horas, todos los días</span>
-      <a href="tel:+59144661138">Llamar al 4461138</a>
+  <div class="top" id="top">
+    <div class="alert-bar">
+      <div class="wrap alert-bar-inner">
+        <span>Emergencias veterinarias las 24 horas, todos los días</span>
+        <a href="tel:+59144661138">Llamar al 4461138</a>
+      </div>
     </div>
+    <header class="header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#inicio" aria-label="CESAVET, inicio">
+          <img class="logo" src="assets/logo.jpg" alt="">
+          <span>
+            <span class="brand-kicker">Centro de salud veterinaria</span>
+            <span class="brand-name">CESAVET</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+        <nav class="nav" id="menu">
+          <a href="#clinica">El local</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#urgencia">Urgencias</a>
+          <a href="#donde">Cómo llegar</a>
+          <a href="#turno">Turno</a>
+        </nav>
+        <a class="btn btn-alert header-cta" href="tel:+59144661138">Llamar</a>
+      </div>
+    </header>
   </div>
-  <header class="header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inicio" aria-label="CESAVET, inicio">
-        <span class="mark" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M8 1h2v16H8zM1 8h16v2H1z" fill="currentColor"/></svg>
-        </span>
-        <span>
-          <strong>CESAVET</strong>
-          <span>Veterinaria y emergencias</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-      <nav class="nav" id="menu">
-        <a href="#servicios">Servicios</a>
-        <a href="#urgencia">Urgencias</a>
-        <a href="#eco">Ecografía</a>
-        <a href="#donde">Cómo llegar</a>
-        <a href="#turno">Turno</a>
-      </nav>
-      <a class="btn btn-alert header-cta" href="tel:+59144661138">Llamar</a>
-    </div>
-  </header>
 
   <main id="contenido">
     <section class="hero" id="inicio">
+      <img class="hero-photo" src="assets/noche.jpg" alt="Letrero iluminado de CESAVET de noche, en Ladislao Cabrera">
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Centro de salud veterinaria · Cochabamba</p>
+          <p class="eyebrow">Cochabamba · Ladislao Cabrera 786</p>
           <h1>Cuidamos de ellos como parte de tu familia.</h1>
           <p class="lead">Consultas, vacunas, tratamientos e internación para perros y gatos. Si la situación no puede esperar, el equipo de emergencias atiende las 24 horas.</p>
-          <div class="actions">
-            <a class="btn btn-alert" href="tel:+59144661138">Llamar a emergencias</a>
-            <a class="btn btn-line" href="https://wa.me/59170769984?text=Hola%2C%20CESAVET.%20Quiero%20agendar%20una%20consulta.">Agendar por WhatsApp</a>
-          </div>
           <ul class="facts">
             <li><strong>4,7 en Google</strong><span>558 reseñas</span></li>
             <li><strong>Ecógrafo PROPET 60</strong><span>diagnóstico en clínica</span></li>
@@ -102,67 +101,79 @@
           </ul>
         </div>
         <aside class="er-card" aria-label="Emergencias">
-          <p class="pulse">Abierto ahora</p>
+          <p class="pulse">Emergencias abiertas · las 24 horas</p>
           <h2>Si es una urgencia, llama.</h2>
           <p>Decaído, sin comer, vómitos repetidos o un accidente: no esperes a que pase solo.</p>
           <a class="phone-link" href="tel:+59144661138">4461138</a>
           <div class="er-actions">
             <a class="btn btn-alert" href="tel:+59144661138">Llamar</a>
-            <a class="btn btn-dark-line" href="https://wa.me/59170769984?text=URGENCIA.%20Hola%2C%20CESAVET%2C%20necesito%20ayuda%20con%20mi%20mascota.">WhatsApp</a>
+            <a class="btn btn-glass" href="https://wa.me/59170769984?text=URGENCIA.%20Hola%2C%20CESAVET%2C%20necesito%20ayuda%20con%20mi%20mascota.">WhatsApp</a>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <section class="clinic" id="clinica" aria-label="Fotos de la clínica">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">El local</p>
+            <h2>La misma puerta de Ladislao Cabrera, de día y de noche.</h2>
+          </div>
+          <p>Fotos de la ficha pública de Google. El letrero de la puerta marca el 786 y los teléfonos 4661138 y 70769984.</p>
+        </div>
+        <div class="panels">
+          <article class="panel-photo panel-wide">
+            <img src="assets/fachada.jpg" alt="Fachada de Veterinaria CESAVET en Ladislao Cabrera 786, Cochabamba">
+            <div class="panel-copy">
+              <h3>Ladislao Cabrera 786</h3>
+              <p>En la fachada anuncian medicina preventiva, tratamiento, atención a domicilio y trámites de viaje, dentro y fuera del país.</p>
+            </div>
+          </article>
+          <article class="panel-photo">
+            <img src="assets/consulta.jpg" alt="Perro recostado en la mesa de consulta de CESAVET">
+            <div class="panel-copy">
+              <h3>La consulta</h3>
+              <p>Perros y gatos, en la misma mesa. Si puede esperar, pide turno. Si no, llama.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="services" id="servicios">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Qué atendemos</p>
-          <h2>La consulta de siempre y la noche en que no hay otra clínica abierta.</h2>
-          <p class="intro">CESAVET publica estos servicios para las familias de Cochabamba: revisión, prevención, tratamiento y un lugar donde la mascota puede quedarse en observación.</p>
+          <div>
+            <p class="eyebrow">Qué atendemos</p>
+            <h2>La consulta de siempre y la noche en que no hay otra clínica abierta.</h2>
+          </div>
+          <p>Revisión, prevención, tratamiento e internación. En la puerta también anuncian atención a domicilio y trámites de viaje para mascotas.</p>
         </div>
         <div class="cards">
           <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3h8v4H8z"/><path d="M9 7v2a3 3 0 0 0 6 0V7"/><rect x="6" y="11" width="12" height="10" rx="2"/></svg>
-            </div>
             <h3>Consulta</h3>
             <p>Control de rutina y revisión cuando algo cambió. También para los que ya son mayores y necesitan verse con más frecuencia.</p>
           </article>
           <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M8 7h8M9 21h6"/><path d="M8 7c0 3-2 4-2 7a6 6 0 0 0 12 0c0-3-2-4-2-7"/></svg>
-            </div>
             <h3>Vacunas</h3>
             <p>El esquema de prevención, para llegar al día y no cuando ya apareció el problema.</p>
           </article>
           <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6v5H9z"/><path d="M10 8h4l1 13H9L10 8z"/></svg>
-            </div>
             <h3>Tratamientos</h3>
             <p>El veterinario indica qué corresponde. Conviene completar el tiempo que te digan, aunque ya se vea mejor.</p>
           </article>
           <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg>
-            </div>
             <h3>Internación</h3>
             <p>Cuando la mascota tiene que quedarse en observación o seguir el tratamiento en la clínica.</p>
           </article>
           <article class="card" id="eco">
-            <div class="icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="10" r="2"/></svg>
-            </div>
             <h3>Ecografía</h3>
             <p>Cuentan con un ecógrafo PROPET 60 para ver por dentro y afinar el diagnóstico antes de decidir el tratamiento.</p>
           </article>
           <article class="card card-alert">
-            <div class="icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v5M12 17h.01"/><path d="M10.3 4.2 2.6 18a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/></svg>
-            </div>
             <h3>Emergencias</h3>
-            <p>Las 24 horas, todos los días. Llama al 4461138 y ven con tu mascota a la calle 16 de Julio.</p>
+            <p>Las 24 horas, todos los días. Llama al 4461138 y ven a Ladislao Cabrera 786.</p>
           </article>
         </div>
       </div>
@@ -187,17 +198,15 @@
       </div>
     </section>
 
-    <section>
-      <div class="wrap">
-        <div class="scan">
-          <div>
-            <p class="eyebrow">Diagnóstico</p>
-            <h2>Un ecógrafo en la misma clínica.</h2>
-            <p class="intro">Incorporaron un Sonoscape PROPET 60, junto a Tecmedical, para obtener imágenes más claras y decidir con mejor información. Sirve en la consulta y cuando el caso no puede quedar solo en lo que se ve por fuera.</p>
-          </div>
-          <div class="actions">
-            <a class="btn btn-pine" href="https://wa.me/59170769984?text=Hola%2C%20CESAVET.%20Quiero%20consultar%20por%20una%20ecograf%C3%ADa.">Consultar una ecografía</a>
-          </div>
+    <section class="band">
+      <div class="wrap scan">
+        <div>
+          <p class="eyebrow">Diagnóstico</p>
+          <h2>Un ecógrafo en la misma clínica.</h2>
+          <p class="intro">Incorporaron un Sonoscape PROPET 60, junto a Tecmedical, para obtener imágenes más claras y decidir con mejor información. Sirve en la consulta y cuando el caso no puede quedar solo en lo que se ve por fuera.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-alert" href="https://wa.me/59170769984?text=Hola%2C%20CESAVET.%20Quiero%20consultar%20por%20una%20ecograf%C3%ADa.">Consultar una ecografía</a>
         </div>
       </div>
     </section>
@@ -205,8 +214,10 @@
     <section>
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Cómo es la visita</p>
-          <h2>Llegas, lo revisan y te explican el paso siguiente.</h2>
+          <div>
+            <p class="eyebrow">Cómo es la visita</p>
+            <h2>Llegas, lo revisan y te explican el paso siguiente.</h2>
+          </div>
         </div>
         <div class="steps">
           <article class="step">
@@ -231,9 +242,11 @@
     <section class="visit" id="donde">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Dónde estamos</p>
-          <h2>Calle 16 de Julio, Cochabamba.</h2>
-          <p class="intro">Entre Calama y Ladislao Cabrera, N° 565. Las emergencias no cierran de noche ni el domingo.</p>
+          <div>
+            <p class="eyebrow">Dónde estamos</p>
+            <h2>Ladislao Cabrera 786.</h2>
+          </div>
+          <p>El número está en la puerta. Queda sobre Ladislao Cabrera, a la altura de la calle 16 de Julio y Calama. Las emergencias no cierran de noche ni el domingo.</p>
         </div>
         <div class="visit-grid">
           <div class="panel">
@@ -250,10 +263,10 @@
               <li><a href="https://wa.me/59170769984">WhatsApp <span>70769984</span></a></li>
             </ul>
             <div class="actions actions-tight">
-              <a class="btn btn-pine" href="https://www.google.com/maps/dir/?api=1&destination=CESAVET+Veterinaria+Calle+16+de+Julio+Cochabamba">Cómo llegar</a>
+              <a class="btn btn-pine" href="https://www.google.com/maps/dir/?api=1&destination=-17.39623,-66.15025">Cómo llegar</a>
             </div>
           </div>
-          <iframe class="map" title="Mapa de CESAVET en la calle 16 de Julio, Cochabamba" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-17.39623,-66.15025&z=16&output=embed"></iframe>
+          <iframe class="map" title="Mapa de CESAVET en Ladislao Cabrera 786, Cochabamba" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-17.39623,-66.15025&z=16&output=embed"></iframe>
         </div>
       </div>
     </section>
@@ -293,8 +306,8 @@
   <footer class="footer">
     <div class="wrap footer-inner">
       <p><strong>CESAVET</strong><br>Centro de Salud Veterinaria · Cochabamba</p>
-      <p>Calle 16 de Julio N° 565, entre Calama y Ladislao Cabrera<br><a href="https://www.facebook.com/352067992028033">Facebook</a></p>
-      <p>© <span data-year>2026</span> CESAVET Veterinaria y Emergencias</p>
+      <p>Ladislao Cabrera N° 786, Cochabamba<br><a href="https://www.facebook.com/352067992028033">Facebook</a></p>
+      <p>Fotos del local, de la ficha pública de Google.<br>© <span data-year>2026</span> CESAVET Veterinaria y Emergencias</p>
     </div>
   </footer>
 
